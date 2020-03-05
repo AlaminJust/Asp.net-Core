@@ -1,0 +1,5 @@
+            var request = HttpContext.Request;
+            var currentUser = User.Identity.Name;
+            string controller = request.RouteValues["controller"].ToString();
+            string action = request.RouteValues["action"].ToString();
+            string ID = request.RouteValues["Id"].ToString();
