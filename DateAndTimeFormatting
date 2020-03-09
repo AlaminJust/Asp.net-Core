@@ -14,7 +14,9 @@ namespace LocalMealManagement.ViewModel
        
         public DateTime CreateDate { get; set; }
 
-        
+        [DisplayFormat(DataFormatString = "{0:dd MMM yyyy}")]
+        [Display(Name = "Date of Birthday")]
+        [DataType(DataType.Date)]
         public DateTime? StartDate { get; set; }
 
         [DisplayFormat(DataFormatString = "HH: MM")]
